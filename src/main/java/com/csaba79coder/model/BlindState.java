@@ -16,12 +16,16 @@ public abstract class BlindState extends AbstractState {
 
     // Implement the first basic operator.
     private boolean op1() {
-        if (!preOp1()) return false;
+        if (!preOp1()) {
+            return false;
+        }
         // State transition:
         //
         // TODO: Add the code here!
         //
-        if (isState()) return true;
+        if (isState()) {
+            return true;
+        }
         // Otherwise, revert the state transition:
         //
         // TODO: Add the code here!

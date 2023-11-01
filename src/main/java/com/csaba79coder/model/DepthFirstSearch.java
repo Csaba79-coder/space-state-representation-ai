@@ -14,9 +14,9 @@ public class DepthFirstSearch extends GraphSearch {
     // For depth-first search, it's beneficial to store open nodes in a stack.
     // This way, the node with the maximum depth is always at the top of the stack.
     // There's no need to search for the node with the maximum depth to expand.
-    private Stack<Node> open; // Set of open nodes.
-    private List<Node> closed; // Set of closed nodes.
-    private boolean cycleDetection; // If false, it can fall into an infinite loop.
+    private final Stack<Node> open; // Set of open nodes.
+    private final List<Node> closed; // Set of closed nodes.
+    private final boolean cycleDetection; // If false, it can fall into an infinite loop.
 
     public DepthFirstSearch(Node startNode, boolean cycleDetection) {
         super(startNode);

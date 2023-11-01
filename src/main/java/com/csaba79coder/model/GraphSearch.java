@@ -10,7 +10,7 @@ import java.util.Stack;
  */
 
 public abstract class GraphSearch {
-    private Node startNode; // The start node for the graph search.
+    private final Node startNode; // The start node for the graph search.
 
     public GraphSearch(Node startNode) {
         this.startNode = startNode;

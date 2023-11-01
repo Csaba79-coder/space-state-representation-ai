@@ -9,8 +9,8 @@ package com.csaba79coder.model;
  * The branch-bound Backtrack is not implemented.
  */
 public class BackTrack extends GraphSearch {
-    private int limit;
-    private boolean useMemory;
+    private final int limit;
+    private final boolean useMemory;
 
     public BackTrack(Node startNode, int limit, boolean useMemory) {
         super(startNode);

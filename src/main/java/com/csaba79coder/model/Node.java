@@ -5,9 +5,9 @@ import java.util.List;
 
 public class Node {
     // A node contains a state, its depth, and its parent node.
-    private AbstractState state;
-    private int depth;
-    private Node parent; // Going up the parents leads to the start node.
+    private final AbstractState state;
+    private final int depth;
+    private final Node parent; // Going up the parents leads to the start node.
 
     // Constructor:
     // Sets the internal state to the start state.
