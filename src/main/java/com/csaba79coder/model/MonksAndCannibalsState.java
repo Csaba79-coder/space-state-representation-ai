@@ -26,13 +26,13 @@ package com.csaba79coder.model;
  */
 
 public class MonksAndCannibalsState extends AbstractState {
-    int missionaries; // Number of missionaries in total
-    int cannibals; // Number of cannibals in total
-    int missionariesOnLeft; // Number of missionaries on the left side
-    int cannibalsOnLeft; // Number of cannibals on the left side
-    char boat; // Boat location, 'B' for left, 'J' for right
-    int missionariesOnRight; // Number of missionaries on the right side
-    int cannibalsOnRight; // Number of cannibals on the right side
+    private final int missionaries; // Number of missionaries in total
+    private final int cannibals; // Number of cannibals in total
+    private int missionariesOnLeft; // Number of missionaries on the left side
+    private int cannibalsOnLeft; // Number of cannibals on the left side
+    private char boat; // Boat location, 'B' for left, 'J' for right
+    private int missionariesOnRight; // Number of missionaries on the right side
+    private int cannibalsOnRight; // Number of cannibals on the right side
 
     public MonksAndCannibalsState(int missionaries, int cannibals) {
         this.missionaries = missionaries;

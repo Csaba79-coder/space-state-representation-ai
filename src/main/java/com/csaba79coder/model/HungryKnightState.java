@@ -54,7 +54,8 @@ public class HungryKnightState extends AbstractState {
     // By default, the class represents a 3x3 chessboard.
     private static int N = 3;
     // Fields for internal state representation.
-    private int x, y;
+    private int x;
+    private int y;
 
     // Set the initial state (default constructor).
     public HungryKnightState() {
