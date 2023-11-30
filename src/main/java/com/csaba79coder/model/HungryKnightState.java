@@ -1,7 +1,5 @@
 package com.csaba79coder.model;
 
-import java.util.Objects;
-
 /**
  * This is the state representation of the "Hungry Knight" problem.
  * The knight needs to go from the starting position in the top left corner
@@ -110,7 +108,19 @@ public class HungryKnightState extends AbstractState {
 
     @Override
     public boolean isSuperOperator(int i) {
-        switch (i) {
+        return switch (i) {
+            // Enumerate all possible 8 knight moves.
+            case 0 -> knightMove(1, 2);
+            case 1 -> knightMove(1, -2);
+            case 2 -> knightMove(-1, 2);
+            case 3 -> knightMove(-1, -2);
+            case 4 -> knightMove(2, 1);
+            case 5 -> knightMove(2, -1);
+            case 6 -> knightMove(-2, 1);
+            case 7 -> knightMove(-2, -1);
+            default -> false;
+        };
+        /*switch (i) {
             // Enumerate all possible 8 knight moves.
             case 0: return knightMove(1, 2);
             case 1: return knightMove(1, -2);
@@ -121,7 +131,7 @@ public class HungryKnightState extends AbstractState {
             case 6: return knightMove(-2, 1);
             case 7: return knightMove(-2, -1);
             default: return false;
-        }
+        }*/
     }
 
     @Override
